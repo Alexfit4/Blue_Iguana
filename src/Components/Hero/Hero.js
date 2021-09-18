@@ -6,7 +6,7 @@ export default function Hero() {
 			<div>
 				<div className='container'>
 					<video
-						className='sm:ml-16 md:ml- lg:ml-48 lg:w-full'
+						className='video-size sm:ml-10   md:mx-6 lg:ml-48 lg:w-full'
 						autostart
 						autoPlay
 						muted

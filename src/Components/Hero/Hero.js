@@ -1,12 +1,19 @@
 import React from 'react'
 import video from '../Assets/IMG_0096.mp4'
-import { Player } from 'video-react';
-import ReactPlayer from 'react-player';
+import './Hero.css'
 export default function Hero() {
     return (
 			<div>
-				<div className='container mx-auto'>
-					<video className="lg:ml-28" controls autostart autoPlay src={video} type='video/mp4' width={1200} />
+				<div className='container'>
+					<video
+						className='sm:ml-16 md:ml- lg:ml-48 lg:w-full'
+						autostart
+						autoPlay
+						muted
+						src={video}
+						type='video/mp4'
+						width={1100}
+					/>
 				</div>
 			</div>
 		);

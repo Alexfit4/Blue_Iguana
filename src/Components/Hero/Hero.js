@@ -15,6 +15,7 @@ export default function Hero() {
 						width={1100}
 					/>
 				</div>
+				<h1>testing</h1>
 			</div>
 		);
 }

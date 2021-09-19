@@ -7,7 +7,7 @@ export default function Footer() {
      <nav id="footer" class="bg-gray-400">
 
 
-<div class="container mx-auto pt-8 pb-4">
+<div class="container sss mx-auto pt-8 pb-4">
 
     <div class="flex flex-wrap overflow-hidden sm:-mx-1 md:-mx-px lg:-mx-2 xl:-mx-2">
 

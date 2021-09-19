@@ -1,0 +1,14 @@
+.logo {
+    max-width: 70%;
+}
+
+#navi-2{
+    color: white;
+}
+
+.social {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}

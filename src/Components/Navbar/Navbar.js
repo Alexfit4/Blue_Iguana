@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../Assets/iguanalogo_horiz.png'
+import logo from '../Assets/iguanalogo_horiz.png';
 export default function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (

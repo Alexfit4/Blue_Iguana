@@ -4,6 +4,11 @@ import hummus from '../Assets/hummus-750x750.png';
 import nachos from '../Assets/nachos-750x750.png';
 import wings from '../Assets/chicken-wings-750x750.png';
 import calamari from '../Assets/calamari-750x750.png';
+import placeHolder from '../Assets/y9DpT.jpg';
+
+const heroImages = [placeHolder, placeHolder, placeHolder, placeHolder];
+
+const indexList = ['Appetizers', 'Small Plates', 'Drinks', 'Tater Tot Menu', 'Salads', 'Sandwiches', 'Entress', 'Sides', 'Dessert' ]
 
 const Appetizers = [
 	{
@@ -49,4 +54,4 @@ const Appetizers = [
 	},
 ];
 
-export { Appetizers };
+export { Appetizers, heroImages, indexList };

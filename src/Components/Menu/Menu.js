@@ -19,7 +19,7 @@ export default function Menu() {
 
 			<div className='flex flex-row justify-center'>
 				{heroImages.map((x) => {
-					return <img className=' w-96 ' src={x} />;
+					return <img className=' w-96  ' src={x} />;
 				})}
 			</div>
 			<div className='flex md:justify-around mx-64 flex-wrap '>
@@ -30,7 +30,7 @@ export default function Menu() {
 							spy={true}
 							smooth={true}
 							to={x}
-							className='bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-2 px-4 rounded'>
+							className='bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-2 px-4 rounded '>
 							{x}
 						</Link>
 					);

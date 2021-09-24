@@ -15,6 +15,7 @@ import {
 	Paragraph
 } from '@material-tailwind/react/';
 import H6 from '@material-tailwind/react/Heading6';
+import SmallPlates from './SmallPlates';
 
 export default function Menu() {
 	return (
@@ -87,24 +88,6 @@ export default function Menu() {
 				<div className=' p-10 grid lg:grid-cols-2 gap-4 md:grid-col-1  md:rounded-lg border-4 text-yellow-700 border-opacity-75 border-solid  '>
 					{Appetizers.map((x) => {
 						return (
-							// <div class='max-w-sm md:w-15 rounded overflow-hidden shadow-lg md:mx-auto'>
-							// 	<div className='flex flex-wrap justify-center'>
-							// 		<div className='w-8/12 sm:w-6/12 '>
-							// 			<img
-							// 				src={x.image}
-							// 				alt='...'
-							// 				className='shadow rounded-full max-w-full h-auto align-middle border-none'
-							// 			/>
-							// 		</div>
-							// 	</div>
-							// 	<div class='px-6 py-4'>
-							// 		<div class='font-bold text-xl mb-2 text-center'>{x.name}</div>
-							// 		<p class='text-gray-700 text-base text-center'>
-							// 			{x.description}
-							// 		</p>
-							// 	</div>
-							// </div>
-
 							<div className='container flex flex-wrap mx-auto mt-10 '>
 								<Card>
 									<CardRow>
@@ -120,10 +103,7 @@ export default function Menu() {
 										<CardBody>
 											<H6 color='gray'>{x.name}</H6>
 											<Paragraph color='gray'>
-												Don't be scared of the truth because we need to restart
-												the human foundation in truth And I love you like Kanye
-												loves Kanye I love Rick Owens’ bed design but the back
-												is...
+											{x.description}
 											</Paragraph>
 										</CardBody>
 									</CardRow>			
@@ -133,7 +113,11 @@ export default function Menu() {
 					})}
 				</div>
 			</div>
-			<div className='container'></div>
+			
+			<div>
+				<SmallPlates/>
+			</div>
+			
 		</div>
 	);
 }

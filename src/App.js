@@ -5,6 +5,7 @@ import Hero from './Components/Hero/Hero';
 import Home from './Components/Home/Home'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Menu from './Components/Menu/Menu';
+import '@material-tailwind/react/tailwind.css';
 function App() {
   return (
 		<Router>

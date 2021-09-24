@@ -6,7 +6,7 @@ import wings from '../Assets/chicken-wings-750x750.png';
 import calamari from '../Assets/calamari-750x750.png';
 import placeHolder from '../Assets/y9DpT.jpg';
 
-const heroImages = [placeHolder, placeHolder, placeHolder, placeHolder];
+const heroImages = [placeHolder, placeHolder, placeHolder];
 
 const indexList = ['Appetizers', 'Small Plates', 'Drinks', 'Tater Tot Menu', 'Salads', 'Sandwiches', 'Entress', 'Sides', 'Dessert' ]
 

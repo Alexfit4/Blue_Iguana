@@ -6,23 +6,51 @@ import { Link } from 'react-scroll';
 export default function Menu() {
 	return (
 		<div>
-			<div className='mx-auto relative  '>
-				<img
-					className='hero-menu-image opacity-75 h-auto mx-auto'
-					src={menuHero}
-					alt=''
-				/>
-				<h1 className='hero-menu-text text-center text-8xl font-bold bottom-10 absolute inset-x-0 top-96   '>
-					Blue Iguana Food Menu
-				</h1>
+			<div className='relative h-64 m-8 overflow-hidden rounded-lg bg-indigo-500 container mx-auto'>
+				<div className='absolute z-30 flex w-full h-full'>
+					<div className='relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2'>
+						<h2 className='text-7xl hero-menu-text'>Blue Iguana Food Menu</h2>
+						<span></span>
+					</div>
+					<div className='absolute top-0 right-0 flex w-full h-full'>
+						<div className='w-1/3 h-full bg-indigo-500'></div>
+						<div className='relative w-1/3'>
+							<svg
+								fill='currentColor'
+								viewBox='0 0 100 100'
+								className='absolute inset-y-0 z-20 h-full text-indigo-500'>
+								<polygon
+									id='diagonal'
+									points='0,0 100,0 50,100 0,100'></polygon>
+							</svg>
+							<svg
+								fill='currentColor'
+								viewBox='0 0 100 100'
+								className='absolute inset-y-0 z-10 h-full ml-6 text-white opacity-50'>
+								<polygon points='0,0 100,0 50,100 0,100'></polygon>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div className='absolute top-0 right-0 block w-9/12 h-full'>
+					<img
+						alt='Snowy mountain lake'
+						className='object-cover min-w-full h-full'
+						src={menuHero}
+					/>
+				</div>
 			</div>
 
-			<div className='flex flex-row justify-center'>
+			<div className='container flex flex-wrap mx-auto'>
 				{heroImages.map((x) => {
-					return <img className=' w-96  ' src={x} />;
+					return (
+						<div className='w-full p-2 rounded lg:w-1/3'>
+							<img src={x} />
+						</div>
+					);
 				})}
 			</div>
-			<div className='flex md:justify-around mx-64 flex-wrap '>
+			<div className='flex md:justify-around mx-64 flex-wrap grid lg:grid-cols-2 '>
 				{indexList.map((x) => {
 					return (
 						<Link
@@ -30,7 +58,7 @@ export default function Menu() {
 							spy={true}
 							smooth={true}
 							to={x}
-							className='bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-2 px-4 rounded '>
+							className='bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-2 px-4 mx-48 mt-5 rounded '>
 							{x}
 						</Link>
 					);
@@ -42,51 +70,48 @@ export default function Menu() {
 				APPETIZERS
 			</h1>
 
-			<div className='p-10 grid grid-cols-2 gap-4 rounded-lg border-4 text-yellow-700 border-opacity-75 border-solid '>
-				{Appetizers.map((x) => {
-					return (
-						<div class='max-w-sm rounded overflow-hidden shadow-lg mx-auto'>
-							<img class='w-full' src={x.image} alt='Mountain' />
-							<div class='px-6 py-4'>
-								<div class='font-bold text-xl mb-2'>Mountain</div>
-								<p class='text-gray-700 text-base'>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Voluptatibus quia, nulla! Maiores et perferendis eaque,
-									exercitationem praesentium nihil.
-								</p>
+			<div className='container md:mx-auto'>
+				<div className=' p-10 grid lg:grid-cols-2 gap-4 md:grid-col-1  md:rounded-lg border-4 text-yellow-700 border-opacity-75 border-solid  '>
+					{Appetizers.map((x) => {
+						return (
+							<div class='max-w-sm md:w-15 rounded overflow-hidden shadow-lg md:mx-auto'>
+								<div className='flex flex-wrap justify-center'>
+									<div className='w-8/12 sm:w-6/12 '>
+										<img
+											src={x.image}
+											alt='...'
+											className='shadow rounded-full max-w-full h-auto align-middle border-none'
+										/>
+									</div>
+								</div>
+								<div class='px-6 py-4'>
+									<div class='font-bold text-xl mb-2 text-center'>{x.name}</div>
+									<p class='text-gray-700 text-base text-center'>
+										{x.description}
+									</p>
+								</div>
 							</div>
-							<div class='px-6 pt-4 pb-2'>
-								<span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
-									#photography
-								</span>
-								<span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
-									#travel
-								</span>
-								<span class='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
-									#winter
-								</span>
-							</div>
-						</div>
 
-						// <div className=' w-22 lg:max-w-full lg:flex '>
-						// 	<img
-						// 		className='w-52 sm:w-32 sm:h-32 sm:ml-16 h-24 mt-10 md:ml-5 rounded-lg border-4 text-yellow-700 border-opacity-75 border-solid shadow-lg'
-						// 		src={x.image}
-						// 		alt=''
-						// 	/>
-						// 	<div className=' lg:border-l-0 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal'>
-						// 		<div className='mb-8'>
-						// 			<div className='text-gray-900 font-bold text-xl mb-2 md:text-center sm:text-center'>
-						// 				{x.name}
-						// 			</div>
-						// 			<p className='text-gray-700 text-base md:text-center'>
-						// 				{x.description}
-						// 			</p>
-						// 		</div>
-						// 	</div>
-						// </div>
-					);
-				})}
+							// <div className=' w-22 lg:max-w-full lg:flex '>
+							// 	<img
+							// 		className='w-52 sm:w-32 sm:h-32 sm:ml-16 h-24 mt-10 md:ml-5 rounded-lg border-4 text-yellow-700 border-opacity-75 border-solid shadow-lg'
+							// 		src={x.image}
+							// 		alt=''
+							// 	/>
+							// 	<div className=' lg:border-l-0 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal'>
+							// 		<div className='mb-8'>
+							// 			<div className='text-gray-900 font-bold text-xl mb-2 md:text-center sm:text-center'>
+							// 				{x.name}
+							// 			</div>
+							// 			<p className='text-gray-700 text-base md:text-center'>
+							// 				{x.description}
+							// 			</p>
+							// 		</div>
+							// 	</div>
+							// </div>
+						);
+					})}
+				</div>
 			</div>
 		</div>
 	);

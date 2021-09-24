@@ -12,10 +12,13 @@ import {
 	Icon,
 	CardImage,
 	CardBody,
-	Paragraph
+	Paragraph,
 } from '@material-tailwind/react/';
 import H6 from '@material-tailwind/react/Heading6';
 import SmallPlates from './SmallPlates';
+import TaterTots from './TaterTots';
+import Salads from './Salads';
+import Sandwhiches from './Sandwhiches';
 
 export default function Menu() {
 	return (
@@ -97,27 +100,34 @@ export default function Menu() {
 											alt='Card Image'
 										/>
 
-										<CardStatus										
-											amount={x.price}
-										/>
+										<CardStatus amount={x.price} />
 										<CardBody>
 											<H6 color='gray'>{x.name}</H6>
-											<Paragraph color='gray'>
-											{x.description}
-											</Paragraph>
+											<Paragraph color='gray'>{x.description}</Paragraph>
 										</CardBody>
-									</CardRow>			
+									</CardRow>
 								</Card>
 							</div>
 						);
 					})}
 				</div>
 			</div>
-			
+
 			<div>
-				<SmallPlates/>
+				<SmallPlates />
 			</div>
-			
+
+			<div>
+				<TaterTots />
+			</div>
+
+			<div>
+				<Salads />
+			</div>
+
+			<div>
+				<Sandwhiches/>
+			</div>
 		</div>
 	);
 }

@@ -28,7 +28,7 @@ export default function Navbar({ fixed }) {
 									<Link
 										to='/'
 										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
-										href='#pablo'>
+										>
 										<span className='ml-2'>Home</span>
 									</Link>
 								</li>
@@ -58,11 +58,11 @@ export default function Navbar({ fixed }) {
 												</Link>
 												<ul class='dropdown-menu  hidden text-gray-700 pt-1'>
 													<li class=''>
-														<a
+														<Link
 															class='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
-															href='#'>
+															to="/Menu">
 															Food Menu
-														</a>
+														</Link>
 													</li>
 													<li class=''>
 														<a

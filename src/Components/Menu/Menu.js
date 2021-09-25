@@ -67,7 +67,7 @@ export default function Menu() {
 					);
 				})}
 			</div>
-			<div className='container flex md:justify-around lg:mx-64 flex-wrap grid lg:grid-cols-2 sm:grid-col-1 '>
+			<div className='container mx-auto flex md:justify-around lg:mx-64 flex-wrap grid lg:grid-cols-2 sm:grid-col-1 '>
 				{indexList.map((x) => {
 					return (
 						<Link

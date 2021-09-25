@@ -19,6 +19,10 @@ import SmallPlates from './SmallPlates';
 import TaterTots from './TaterTots';
 import Salads from './Salads';
 import Sandwhiches from './Sandwhiches';
+import Entrees from './Entrees';
+import Sides from './Sides';
+import PremiumSides from './PremiumSides';
+import Desserts from './Desserts';
 
 export default function Menu() {
 	return (
@@ -126,7 +130,27 @@ export default function Menu() {
 			</div>
 
 			<div>
-				<Sandwhiches/>
+				<Sandwhiches />
+			</div>
+			<div>
+				<Entrees />
+			</div>
+			<div>
+				<Sides />
+			</div>
+			<div>
+				<PremiumSides />
+			</div>
+			<div>
+				<Desserts />
+			</div>
+
+			<div className='container md:mx-auto mt-10'>
+				<p>
+					* *Contains (may contain) raw or undercooked ingredients. Consuming
+					raw or undercooked meats, poultry, seafood, shellfish or eggs may
+					increase your risk of food borne illness.
+				</p>
 			</div>
 		</div>
 	);

@@ -16,7 +16,7 @@ import steakSalad from '../Assets/steak-salad-750x750.png';
 import blackChicken from '../Assets/blackened-chicken-750x750.png';
 import cobbSalad from '../Assets/cobb-salad-750x750.png';
 import salmonSalad from '../Assets/salmon-salad-750x750.png';
-import impossibleBurger from '../Assets/impossible-burger-750x750.png'
+import impossibleBurger from '../Assets/impossible-burger-750x750.png';
 import blt from '../Assets/blt-750x750.png';
 import bbqChickenWrap from '../Assets/chicken-wrap-750x750.png';
 import shrimpPoBoy from '../Assets/shrimp-poboy-750x750.png';
@@ -26,7 +26,27 @@ import vegieWrap from '../Assets/veggie-wrap-750x750.png';
 import crabCake from '../Assets/crabcake-sandwich-750x750.png';
 import gyro from '../Assets/gyro-750x750.png';
 import steaknCheese from '../Assets/chessesteak-750x500.png';
-const heroImages = [placeHolder, placeHolder, placeHolder];
+import crabLegs from '../Assets/crab-legs-750x750.png';
+import shrimpLb from '../Assets/shrimp-750x750.png';
+import chickenWaffle from '../Assets/chicken-waffle-sliders-750x750.png';
+import chickenPaillard from '../Assets/chicken-paillard-750x750.png';
+import alfredo from '../Assets/fetuchinni-steak-750x750.png';
+import jumboCrabCakes from '../Assets/jumbo-crabcake-750x750.png';
+import newYorkStrip from '../Assets/ny-strip-750x750.png';
+import fajitas from '../Assets/fajitas-750x750.png';
+import blueIggy from '../Assets/beef-load-potato-750x750.png';
+import panRoastedSalmon from '../Assets/salmon-750x750.png';
+import pho from '../Assets/pho-750x750.png';
+import spinachRav from '../Assets/mushroom-ravioli-750x750.png';
+import jambalaya from '../Assets/yambalamba-750x750.png';
+import homemadeIceCream from '../Assets/ice-cream-750x750.png'
+import tresLeches from '../Assets/tres-leches-750x750.png'
+import grannySmith from '../Assets/apple-crisp-750x750.png'
+import chocolateCake from '../Assets/chocolate-cake-750x750.png'
+import tacoBanner from '../Assets/homepage-dish-2-1500x900.jpg'
+import seaFoodInfo from '../Assets/homepage-seafood-3-1500x900.jpg'
+import cheeseCakeBanner from '../Assets/cheescake.jpg'
+const heroImages = [tacoBanner, seaFoodInfo, cheeseCakeBanner];
 
 const indexList = [
 	'Appetizers',
@@ -35,8 +55,9 @@ const indexList = [
 	'Tater Tot Menu',
 	'Salads',
 	'Sandwiches',
-	'Entress',
+	'Entrees',
 	'Sides',
+	'Premium Sides',
 	'Dessert',
 ];
 
@@ -303,6 +324,271 @@ const SandWhichesMenu = [
 	},
 ];
 
+const EntreeMenu = [
+	{
+		name: '1 LB ALASKAN SNOW CRAB LEGS',
+		image: crabLegs,
+		price: '$24',
+		description:
+			'Alaskan snow crab have a sweet and succulent flavor with moist, firm and rich meat. The claw and leg meat is somewhat firmer than the body meat',
+	},
+	{
+		name: '1 LB PEEL & EAT SHRIMP',
+		image: shrimpLb,
+		price: '$21',
+		description:
+			'Our ribs seasoned and smoked in house, with a side of our homemade cole slaw. Served with your choice of one side',
+	},
+	{
+		name: '1/2 RACK OF RIBS',
+		image: logoPlace,
+		price: '$16',
+		description:
+			'Our ribs seasoned and smoked in house, with a side of our homemade cole slaw. Served with your choice of one side',
+	},
+	{
+		name: 'CHICKEN AND WAFFLE SLIDERS',
+		image: chickenWaffle,
+		price: '$16',
+		description:
+			'Roasted and deep-fried chicken served on a homemade waffle with a side of maple cream or spicy maple syrup. Served with your choice of one side',
+	},
+	{
+		name: 'CHICKEN PAILLARD',
+		image: chickenPaillard,
+		price: '$19',
+		description:
+			'Panko crusted chicken breast, smothered in our homemade grain mustard sauce,topped with diced asparagus, tomato, capers, served over mashed potatoes',
+	},
+	{
+		name: 'FETTUCCINI ALFREDO',
+		image: alfredo,
+		price: '$12',
+		description:
+			'Creamy Alfredo sauce poured over fettuccine, mushrooms, spinach, topped with Parmesan cheese',
+		description1: 'Add: chicken $4, shrimp $5, lobster $7',
+	},
+	{
+		name: 'FISH & CHIPS',
+		image: logoPlace,
+		price: '$18',
+		description:
+			'Beer battered cod fish served with our hand cut fries and a side of tartar sauce',
+	},
+	{
+		name: 'JUMBO LUMP CRAB CAKES',
+		image: jumboCrabCakes,
+		price: '$25',
+		description:
+			'Served with a side of our homemade Florida mustard and your choice of one side',
+	},
+	{
+		name: 'NEW YORK STRIP (16OZ)*',
+		image: crabCake,
+		price: '$32',
+		description: 'Served with your choice of two sides',
+	},
+	{
+		name: 'RIBEYE (16OZ)',
+		image: logoPlace,
+		price: '$35',
+		description: 'Served with your choice of two sides',
+	},
+	{
+		name: 'GRILLED BALSAMIC NEW YORK STRIP WITH BLUE CHEESE BUTTER (16OZ)*',
+		image: logoPlace,
+		price: '$33',
+		description: 'Served with your choice of two sides',
+	},
+	{
+		name: 'FAJITAS*',
+		image: fajitas,
+		price: '$17-$18-$19-$22',
+		description:
+			'Marinated steak served with peppers, onions, flour tortilla, various savory fillings served with rice and frijoles charros',
+		description1:
+			'(chicken $17, beef $18, shrimp $19, combine any two $22, double a single meat order $26)',
+	},
+	{
+		name: 'BLUE IGGY BEEF BAKED POTATO',
+		image: blueIggy,
+		price: '$19',
+		description:
+			'Baked potato with beef, bell peppers, onion, garlic and tossed in Alfredo sauce',
+	},
+	{
+		name: 'PAN ROASTED SALMON *',
+		image: panRoastedSalmon,
+		price: '$24',
+		description:
+			'Topped with Tabasco butter cream and served with your choice of two sides.',
+	},
+	{
+		name: 'SHRIMP & GRITS',
+		image: logoPlace,
+		price: '$18',
+		description:
+			'Seasoned shrimp with creamy grits with parmesan and balsamic glaze',
+	},
+	{
+		name: 'PHO',
+		image: pho,
+		price: '$10',
+		description: 'Vietnamese soup consisting of broth, rice noodles, herbs',
+		description1: 'Add protein: chicken $4, shrimp $5, steak $5, lobster $7',
+	},
+	{
+		name: 'SPINACH MUSHROOM RAVIOLI',
+		image: spinachRav,
+		price: '$13',
+		description:
+			'Fresh spinach, mushroom ravioli with homemade spaghetti sauce, garlic and fresh basil',
+	},
+	{
+		name: 'JAMBALAYA',
+		image: jambalaya,
+		price: '$13',
+		description:
+			'Our combination of shrimp, chicken, Andouille sausage, onion, and peppers in our homemade spicy tomato red sauce, served over garlic parsley rice',
+	},
+];
+
+const SidesMenu = [
+	{
+		name: 'BAKED POTATO',
+		price: '$4',
+	},
+	{
+		name: 'MASHED POTATO',
+
+		price: '$4',
+	},
+	{
+		name: 'HAND CUT FRIES',
+
+		price: '$4',
+	},
+	{
+		name: 'MAC & CHEESE',
+
+		price: '$4',
+	},
+	{
+		name: 'SAUTÉED GREEN BEANS',
+
+		price: '$4',
+	},
+	{
+		name: 'PARSLEY RICE',
+
+		price: '$4',
+	},
+	{
+		name: 'TATER TOTS',
+
+		price: '$4',
+	},
+	{
+		name: 'ONION RINGS',
+
+		price: '$4',
+	},
+	{
+		name: 'LOADED BAKED POTATO',
+
+		price: '$5',
+	},
+	{
+		name: 'LOADED SWEET POTATO',
+
+		price: '$5',
+	},
+	{
+		name: 'SWEET POTATO FRIES',
+
+		price: '$5',
+	},
+	{
+		name: 'HOUSE SALAD',
+
+		price: '$5-$18-$19-$22',
+	},
+	{
+		name: 'CAESAR SALAD',
+
+		price: '$5',
+	},
+	{
+		name: 'SAUTÉED MIXED VEGGIES',
+
+		price: '$5',
+	},
+	{
+		name: 'MIXED FRUITS',
+
+		price: '$5',
+	},
+];
+
+const PremiumSidesMenu = [
+	{
+		name: '1/2 LB ALASKAN SNOW CRAB LEGS',
+		price: '$14',
+	},
+	{
+		name: '1/2 LB PEEL & EAT SHRIMP',
+
+		price: '$12',
+	},
+	{
+		name: 'JUMBO LUMP CRAB CAKE',
+
+		price: '$8',
+	},
+];
+
+const DessertsMenu = [
+	{
+		name: 'HOMEMADE ICE CREAM SELECTIONS',
+		image: homemadeIceCream,
+		price: '$4',
+		description:
+			'Two scoops of our homemade Vanilla Bean Ice Cream, Dark Chocolate Ice Cream, or Raspberry Sorbet',
+	},
+	{
+		name: 'TRES LECHES',
+		image: tresLeches,
+		price: '$8',
+		description:
+			'Traditional homemade three milks cake, topped with homemade whipped cream',
+	},
+	{
+		name: 'GRANNY SMITH APPLE CRISP',
+		image: grannySmith,
+		price: '$6',
+		description:
+			'This homemade dessert has a crispy brown sugar crust, filled with warm apple pie, topped with a scoop of our vanilla bean ice cream',
+	},
+	{
+		name: 'CARROT CAKE',
+		image: logoPlace,
+		price: '$6',
+		description:
+			'Made with fresh carrots, toasted walnuts, filled & frosted with cream cheese icing',
+	},
+	{
+		name: 'CHOCOLATE CAKE',
+		image: chocolateCake,
+		price: '$7',
+		description: 'Dark chocolate cake',
+	},
+	{
+		name: 'CHEESE CAKE',
+		image: logoPlace,
+		price: '$7',
+		description: 'Classic cheesecake with graham cracker crust',
+	},
+];
 export {
 	Appetizers,
 	heroImages,
@@ -311,4 +597,8 @@ export {
 	TaterTotsMenu,
 	SaladMenu,
 	SandWhichesMenu,
+	EntreeMenu,
+	SidesMenu,
+	PremiumSidesMenu,
+	DessertsMenu,
 };

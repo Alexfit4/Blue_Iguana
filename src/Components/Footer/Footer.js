@@ -1,8 +1,9 @@
-import React from 'react'
-import logo from '../Assets/iguanalogo.png'
+import React, { Component } from 'react';
+import logo from '../Assets/iguanalogo_horiz.png'
 import "./footer.css"
-export default function Footer() {
-    return (
+class Footer extends Component {
+    render() { 
+        return (
         <div>
      <nav id="footer" className="bg-gray-400">
 
@@ -70,5 +71,6 @@ export default function Footer() {
 
 </nav>
         </div>
-    )
+    ) }
 }
+export default Footer;

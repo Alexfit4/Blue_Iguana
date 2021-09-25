@@ -6,12 +6,12 @@ import './home.css';
 export default function Home() {
 	return (
 		<div>
-			<Hero />
+			<div className="videocontainer"><Hero className="video"/></div>
 			<h1 className='font-bold text-center text-3xl mt-10'>Welcome to Blue Iguana!</h1>
 
-			<div className="mx-10 text-2xl mb-10 mt-10">
-				<h3>WELCOME TO BLUE IGUANA</h3>
-				<p class="main">
+			<div className="mx-10 text-2xl mb-10 mt-10 main">
+				<div className="info"><h3>WELCOME TO BLUE IGUANA</h3>
+				<p>
 					Thank you for choosing to dine with us! Here at Blue Iguana we are
 					dedicated in providing our guests with a genuine, home-style, classic,
 					and quality dining experience. Not only do we cherish each guest that
@@ -32,9 +32,26 @@ export default function Home() {
 					fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
 					sed rhoncus pronin sapien nunc accuan eget.
 				</p>
+				</div>
+		
 
-				
+
+				<div className="hours">
+					<p>Hours and Location:</p>
+					<p> 12727 Shoppes Lane Fairfax VA, 20121</p>
+					<p>Monday - Friday: 11:30am - 2:00 am</p>
+					<p>Saturday: 12:00pm - 2:00 am</p>
+					<p>Sunday: 10:00am - 2:00am</p>
+
+
+
+
+
+				</div>
+
 			</div>
+
+
 			<div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
 				{data.map((x) => {
 					return (

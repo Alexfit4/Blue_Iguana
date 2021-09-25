@@ -4,9 +4,9 @@ import './Hero.css'
 export default function Hero() {
     return (
 			<div>
-				<div className='container'>
+				<div className='video'>
 					<video
-						className='video-size sm:ml-10   md:mx-6 lg:ml-48 lg:w-full'
+						// className='video-size sm:ml-10   md:mx-6 lg:ml-48 lg:w-full'
 						autostart
 						autoPlay
 						muted

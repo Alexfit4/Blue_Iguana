@@ -3,13 +3,8 @@ import { SidesMenu } from './MenuList';
 import {
 	Card,
 	CardRow,
-	CardHeader,
 	CardStatus,
-	CardStatusFooter,
-	Icon,
-	CardImage,
 	CardBody,
-	Paragraph,
 } from '@material-tailwind/react/';
 import H6 from '@material-tailwind/react/Heading6';
 

@@ -3,10 +3,7 @@ import { TaterTotsMenu } from './MenuList';
 import {
 	Card,
 	CardRow,
-	CardHeader,
 	CardStatus,
-	CardStatusFooter,
-	Icon,
 	CardImage,
 	CardBody,
 	Paragraph,

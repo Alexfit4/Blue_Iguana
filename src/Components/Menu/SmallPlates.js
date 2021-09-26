@@ -6,10 +6,7 @@ import { Link } from 'react-scroll';
 import {
 	Card,
 	CardRow,
-	CardHeader,
 	CardStatus,
-	CardStatusFooter,
-	Icon,
 	CardImage,
 	CardBody,
 	Paragraph,

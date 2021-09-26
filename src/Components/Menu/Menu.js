@@ -6,10 +6,7 @@ import { Link } from 'react-scroll';
 import {
 	Card,
 	CardRow,
-	CardHeader,
 	CardStatus,
-	CardStatusFooter,
-	Icon,
 	CardImage,
 	CardBody,
 	Paragraph,
@@ -23,6 +20,7 @@ import Entrees from './Entrees';
 import Sides from './Sides';
 import PremiumSides from './PremiumSides';
 import Desserts from './Desserts';
+import StatusCard from '../StatusCard/StatusCard';
 
 export default function Menu() {
 	return (
@@ -62,15 +60,36 @@ export default function Menu() {
 				</div>
 			</div>
 
-			<div className='container flex flex-wrap mx-auto'>
+			<div className='container max-w-7xl mx-auto px-4'>
+				<div className='flex lg:flex-row md:flex-col flex-col relative z-50'>
+					<StatusCard
+						color='red'
+						icon='grade'
+						title='Speciality Menu'></StatusCard>
+					<StatusCard
+						color='lightBlue'
+						icon='brunch_dining'
+						title='Breakfast Menu'></StatusCard>
+					<StatusCard
+						color='orange'
+						icon='restaurant_menu'
+						title='Weekly Specials'></StatusCard>
+					<StatusCard
+						color='teal'
+						icon='event_available'
+						title='Holiday'></StatusCard>
+				</div>
+			</div>
+
+			{/* <div className='container grid lg:grid-cols-4 grid-cols-1   lg:mx-auto'>
 				{heroImages.map((x) => {
 					return (
-						<div className=' p-2 rounded lg:w-1/3'>
-							<img src={x} />
+						<div className='container lg:w-full lg:mx-auto'>
+							<img className='ml-3 w-11/12 h-48' src={x} />
 						</div>
 					);
 				})}
-			</div>
+			</div> */}
 			<div className='container mx-auto flex md:justify-around lg:mx-64 flex-wrap grid lg:grid-cols-2 sm:grid-col-1 '>
 				{indexList.map((x) => {
 					return (

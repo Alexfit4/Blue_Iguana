@@ -4,7 +4,6 @@ import hummus from '../Assets/hummus-750x750.png';
 import nachos from '../Assets/nachos-750x750.png';
 import wings from '../Assets/chicken-wings-750x750.png';
 import calamari from '../Assets/calamari-750x750.png';
-import placeHolder from '../Assets/y9DpT.jpg';
 import logoPlace from '../Assets/logo-pic-need.png';
 import tacos from '../Assets/street-tacos-750x750.png';
 import quesadilla from '../Assets/quesadilla-750x750.png';
@@ -46,7 +45,12 @@ import chocolateCake from '../Assets/chocolate-cake-750x750.png'
 import tacoBanner from '../Assets/homepage-dish-2-1500x900.jpg'
 import seaFoodInfo from '../Assets/homepage-seafood-3-1500x900.jpg'
 import cheeseCakeBanner from '../Assets/cheescake.jpg'
-const heroImages = [tacoBanner, seaFoodInfo, cheeseCakeBanner];
+const heroImages = [
+	tacoBanner,
+	seaFoodInfo,
+	cheeseCakeBanner,
+	cheeseCakeBanner,
+];
 
 const indexList = [
 	'Appetizers',

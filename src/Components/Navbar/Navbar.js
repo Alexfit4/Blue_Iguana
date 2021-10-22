@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 export default function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
-		<>
-			<div class='container lg:mx-auto md:mx-auto'>
-				<nav className='relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-500 mb-3'>
+		<div className="h-full">
+			<div class='container relative z-40'>
+				<nav className='relative  flex flex-wrap items-center justify-between px-2 py-3 w-screen bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-600 shadow-2xl w-auto'>
 					<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 						<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
 							<img className='w-28' src={logo} alt='' />
@@ -27,8 +27,7 @@ export default function Navbar({ fixed }) {
 								<li className='nav-item'>
 									<Link
 										to='/'
-										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
-										>
+										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'>
 										<span className='ml-2'>Home</span>
 									</Link>
 								</li>
@@ -60,7 +59,7 @@ export default function Navbar({ fixed }) {
 													<li class=''>
 														<Link
 															class='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
-															to="/Menu">
+															to='/Menu'>
 															Food Menu
 														</Link>
 													</li>
@@ -123,6 +122,6 @@ export default function Navbar({ fixed }) {
 					</div>
 				</nav>
 			</div>
-		</>
+		</div>
 	);
 }

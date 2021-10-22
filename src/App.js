@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './index.css'
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Home from './Components/Home/Home'
@@ -8,6 +9,7 @@ import Menu from './Components/Menu/Menu';
 import '@material-tailwind/react/tailwind.css';
 function App() {
   return (
+	  
 		<Router>
 			<div>
 				<Navbar />

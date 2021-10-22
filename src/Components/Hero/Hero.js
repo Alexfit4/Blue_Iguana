@@ -3,10 +3,10 @@ import video from '../Assets/IMG_0096.mp4'
 import './Hero.css'
 export default function Hero() {
     return (
-			<div>
-				<div className='container  lg:mx-auto md:mx-auto'>
+			<div className='-mt-20 z-40'>
+				<div className='container  w-screen'>
 					<video
-						className='video-size sm:ml-10   md:mx-auto lg:mx-auto lg:w-full'
+						className='video-size w-screen '
 						autostart
 						autoPlay
 						muted

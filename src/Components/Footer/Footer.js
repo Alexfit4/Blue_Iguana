@@ -3,7 +3,7 @@ import './footer.css';
 export default function Footer() {
 	return (
 		<div className='  h-full container mx-auto px-28 border-opacity-100 border-solid shadow-inner-2xl'>
-			<nav id='footer' className=' bottom-footer  bg-gray-800'>
+			<nav id='footer' className=' bottom-footer opacity-40  bg-gray-800'>
 				<div className='container mx-auto pt-8 pb-4'>
 					<div className='flex flex-wrap overflow-hidden sm:-mx-1 md:-mx-px lg:-mx-2 xl:-mx-2'>
 						<div className='w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6'></div>

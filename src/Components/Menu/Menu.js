@@ -24,11 +24,13 @@ import StatusCard from '../StatusCard/StatusCard';
 
 export default function Menu() {
 	return (
-		<div>
-			<div className='relative h-64 m-8 overflow-hidden rounded-lg bg-indigo-500 container mx-auto'>
-				<div className='absolute z-30 flex w-full h-full'>
+		<div className='container mx-auto px-28'>
+			<div className='relative h-96 m-8 -mt-16 overflow-hidden rounded-lg bg-indigo-500 container mx-auto'>
+				<div className='absolute z-30  flex w-full h-full'>
 					<div className='relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2'>
-						<h2 className='text-7xl hero-menu-text'>Blue Iguana Food Menu</h2>
+						<h2 className='text-7xl hero-menu-text mt-60'>
+							Blue Iguana Food Menu
+						</h2>
 						<span></span>
 					</div>
 					<div className='absolute top-0 right-0 flex w-full h-full'>
@@ -60,49 +62,42 @@ export default function Menu() {
 				</div>
 			</div>
 
-			<div className='container max-w-7xl mx-auto px-4'>
-				<div className='flex lg:flex-row md:flex-col flex-col relative z-50'>
-					<StatusCard
-						color='red'
-						icon='grade'
-						title='Speciality Menu'></StatusCard>
-					<StatusCard
-						color='lightBlue'
-						icon='brunch_dining'
-						title='Breakfast Menu'></StatusCard>
-					<StatusCard
-						color='orange'
-						icon='restaurant_menu'
-						title='Weekly Specials'></StatusCard>
-					<StatusCard
-						color='teal'
-						icon='event_available'
-						title='Holiday'></StatusCard>
+			<div className='border-2 -mt-12  border-opacity-100 border-solid rounded-lg shadow-inner-2xl shadow-2xl  bg-white'>
+				<div className='container max-w-7xl mx-auto px-4'>
+					<div className='flex lg:flex-row md:flex-col flex-col relative z-50'>
+						<StatusCard
+							color='red'
+							icon='grade'
+							title='Speciality Menu'></StatusCard>
+						<StatusCard
+							color='lightBlue'
+							icon='brunch_dining'
+							title='Breakfast Menu'></StatusCard>
+						<StatusCard
+							color='orange'
+							icon='restaurant_menu'
+							title='Weekly Specials'></StatusCard>
+						<StatusCard
+							color='teal'
+							icon='event_available'
+							title='Holiday'></StatusCard>
+					</div>
 				</div>
-			</div>
 
-			{/* <div className='container grid lg:grid-cols-4 grid-cols-1   lg:mx-auto'>
-				{heroImages.map((x) => {
-					return (
-						<div className='container lg:w-full lg:mx-auto'>
-							<img className='ml-3 w-11/12 h-48' src={x} />
-						</div>
-					);
-				})}
-			</div> */}
-			<div className='container mx-auto flex md:justify-around lg:mx-64 flex-wrap grid lg:grid-cols-2 sm:grid-col-1 '>
-				{indexList.map((x) => {
-					return (
-						<Link
-							activeClass='active'
-							spy={true}
-							smooth={true}
-							to={x}
-							className='bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-2 px-4 lg:mx-48 sm:mx-0 mt-5 rounded '>
-							{x}
-						</Link>
-					);
-				})}
+				<div className='container mx-auto flex md:justify-around lg:mx-64 flex-wrap grid lg:grid-cols-2 sm:grid-col-1  '>
+					{indexList.map((x) => {
+						return (
+							<Link
+								activeClass='active'
+								spy={true}
+								smooth={true}
+								to={x}
+								className='bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-2 px-4 lg:mx-48 sm:mx-0 mt-5 rounded '>
+								{x}
+							</Link>
+						);
+					})}
+				</div>
 			</div>
 			<h1
 				id='Appetizers'
@@ -110,12 +105,12 @@ export default function Menu() {
 				APPETIZERS
 			</h1>
 
-			<div className='container md:mx-auto'>
-				<div className=' p-10 grid lg:grid-cols-2 gap-4 md:grid-col-1  md:rounded-lg border-4 text-yellow-700 border-opacity-75 border-solid  '>
+			<div className='container md:mx-auto '>
+				<div className=' p-10 grid lg:grid-cols-2 gap-4 md:grid-col-1  md:rounded-lg border-4 text-yellow-700 border-opacity-75 border-solid bg-white '>
 					{Appetizers.map((x) => {
 						return (
 							<div className='container flex flex-wrap mx-auto mt-10 '>
-								<Card>
+								<Card className='bg-gray-200'>
 									<CardRow>
 										<CardImage
 											src={x.image}

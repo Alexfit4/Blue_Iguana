@@ -1,0 +1,14 @@
+.contactBanner {
+	background-image: url('./Assets/ContactUs.jpg');
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contact-us {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+}

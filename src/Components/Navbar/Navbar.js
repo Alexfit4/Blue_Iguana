@@ -35,15 +35,12 @@ export default function Navbar({ fixed }) {
 								<li className='nav-item'>
 									<Link
 										to='/About'
-										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
-										href='#pablo'>
+										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'>
 										<span className='ml-2'>About us</span>
 									</Link>
 								</li>
 								<li className='nav-item'>
-									<a
-										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
-										href='#pablo'>
+									<a className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'>
 										<div class=''>
 											<div class='dropdown '>
 												<Link
@@ -78,46 +75,18 @@ export default function Navbar({ fixed }) {
 									</a>
 								</li>
 								<li className='nav-item'>
-									<a
-										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
-										href='#pablo'>
-										<div class=''>
-											<div class='dropdown '>
-												<button class=' font-bold ml-2 rounded inline-flex items-center'>
-													<span class='mr-1'>Events</span>
-													<svg
-														class='fill-current h-4 w-4'
-														xmlns='http://www.w3.org/2000/svg'
-														viewBox='0 0 20 20'>
-														<path d='M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z' />{' '}
-													</svg>
-												</button>
-												<ul class='dropdown-menu  hidden text-gray-700 pt-1'>
-													<li class=''>
-														<a
-															class='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
-															href='#'>
-															Daily Events
-														</a>
-													</li>
-													<li class=''>
-														<a
-															class='bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
-															href='#'>
-															Sport Events
-														</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</a>
+									<Link
+										to='/Events'
+										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'>
+										<span className='ml-2'>Events</span>
+									</Link>
 								</li>
 								<li className='nav-item'>
-									<a
-										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
-										href='#pablo'>
+									<Link
+										to='/Contact'
+										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'>
 										<span className='ml-2'>Contact</span>
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>

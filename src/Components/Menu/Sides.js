@@ -18,11 +18,11 @@ export default function Sides() {
 			</h1>
 
 			<div className='container md:mx-auto'>
-				<div className=' p-10 grid lg:grid-cols-2 gap-4 md:grid-col-1  md:rounded-lg border-4 text-yellow-700 border-opacity-75 border-solid  '>
+				<div className=' p-10 grid lg:grid-cols-2 gap-4 md:grid-col-1  md:rounded-lg border-4 text-yellow-700 border-opacity-75 border-solid bg-white '>
 					{SidesMenu.map((x) => {
 						return (
 							<div className='container flex flex-wrap mx-auto mt-10 '>
-								<Card>
+								<Card className='bg-gray-200'>
 									<CardRow>
 										<CardBody color='white' size='lg' iconOnly>
 											<H6 color='gray'>{x.name}</H6>

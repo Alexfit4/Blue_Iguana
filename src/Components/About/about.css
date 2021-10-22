@@ -1,5 +1,5 @@
 .aboutBanner {
-	background-image: url('../Assets/aboutusBanner.png');
+	background-image: url('./Assets/aboutBannerPhoto.png');
 	height: 500px;
 	background-repeat: no-repeat;
 	background-size: cover;

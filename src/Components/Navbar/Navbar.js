@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from '../Assets/iguanalogo_horiz.png';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 export default function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
-		<div className="h-full">
+		<div className='h-full container mx-auto px-28 '>
 			<div class='container relative z-40'>
 				<nav className='relative  flex flex-wrap items-center justify-between px-2 py-3 w-screen bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-600 shadow-2xl w-auto'>
 					<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
@@ -32,11 +33,12 @@ export default function Navbar({ fixed }) {
 									</Link>
 								</li>
 								<li className='nav-item'>
-									<a
+									<Link
+										to='/About'
 										className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 										href='#pablo'>
 										<span className='ml-2'>About us</span>
-									</a>
+									</Link>
 								</li>
 								<li className='nav-item'>
 									<a

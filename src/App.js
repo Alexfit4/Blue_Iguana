@@ -7,18 +7,25 @@ import Home from './Components/Home/Home'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Menu from './Components/Menu/Menu';
 import '@material-tailwind/react/tailwind.css';
+import Footer from './Components/Footer/Footer';
+import About from './Components/About/About';
 function App() {
   return (
-	  
-		<Router>
-			<div>
-				<Navbar />
-			</div>
-			<Switch>
-				<Route exact path='/' component={Home} />
-				<Route  path='/Menu' component={Menu} />
-			</Switch>
-		</Router>
+		
+			<Router>
+				<div>
+					<Navbar />
+				</div>
+				<Switch>
+					<Route exact path='/' component={Home} />
+					<Route path='/Menu' component={Menu} />
+					<Route path='/About' component={About} />
+				</Switch>
+				<div>
+					<Footer />
+				</div>
+			</Router>
+		
 	);
 }
 

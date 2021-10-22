@@ -4,6 +4,9 @@
 
 .bottom-footer{
     background-image: url("../Assets/barFooterImage2Resize.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     
    
 }

@@ -1,0 +1,25 @@
+.aboutBanner {
+	background-image: url('../Assets/aboutusBanner.png');
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about-us {
+	left: 40%;
+	font-family: Nadeem;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 72px;
+	line-height: 99px;
+	
+}
+
+.about-us-p {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	
+}

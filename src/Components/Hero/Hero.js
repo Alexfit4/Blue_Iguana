@@ -4,9 +4,9 @@ import './Hero.css'
 export default function Hero() {
     return (
 			<div className='-mt-20 z-40'>
-				<div className='container  w-screen'>
+				<div className='container'>
 					<video
-						className='video-size w-screen '
+						className='video-size md:w-screen '
 						autostart
 						autoPlay
 						muted

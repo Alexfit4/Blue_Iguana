@@ -6,8 +6,8 @@ export default function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
 		<div className='container w-screen lg:mx-auto lg:px-28 px-28 mx-auto md:mx-auto md:px-28 '>
-			<div className='container relative z-40'>
-				<nav className='relative  flex flex-wrap items-center justify-between px-2 py-3 w-screen bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-600 shadow-2xl w-auto'>
+			<div className='container relative  mx-auto z-40'>
+				<nav className='relative  flex flex-wrap items-center justify-between px-2 py-3  bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-600 shadow-2xl w-auto'>
 					<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 						<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
 							<img className='w-28' src={logo} alt='' />

@@ -13,7 +13,7 @@ import Contact from './Components/Contact/Contact';
 import Events from './Components/Events/Events';
 function App() {
   return (
-		<div className='container bg-gray-600'>
+		
 			<Router>
 				<div>
 					<Navbar />
@@ -25,11 +25,11 @@ function App() {
 					<Route path='/Contact' component={Contact} />
 					<Route path='/Events' component={Events} />
 				</Switch>
-				<div className='container bg-gray-600'>
+				<div>
 					<Footer />
 				</div>
 			</Router>
-		</div>
+		
 	);
 }
 

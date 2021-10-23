@@ -5,8 +5,8 @@ import Footer from '../Footer/Footer';
 export default function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
-		<div className='h-full container mx-auto px-28 '>
-			<div class='container relative z-40'>
+		<div className='container w-screen lg:mx-auto lg:px-28 px-28 mx-auto md:mx-auto md:px-28 '>
+			<div className='container relative z-40'>
 				<nav className='relative  flex flex-wrap items-center justify-between px-2 py-3 w-screen bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-600 shadow-2xl w-auto'>
 					<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 						<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
@@ -41,30 +41,30 @@ export default function Navbar({ fixed }) {
 								</li>
 								<li className='nav-item'>
 									<a className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'>
-										<div class=''>
-											<div class='dropdown '>
+										<div className=''>
+											<div className='dropdown '>
 												<Link
 													to='/Menu'
-													class=' font-bold ml-2 rounded inline-flex items-center'>
-													<span class='mr-1'>Menu</span>
+													className=' font-bold ml-2 rounded inline-flex items-center'>
+													<span className='mr-1'>Menu</span>
 													<svg
-														class='fill-current h-4 w-4'
+														className='fill-current h-4 w-4'
 														xmlns='http://www.w3.org/2000/svg'
 														viewBox='0 0 20 20'>
 														<path d='M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z' />{' '}
 													</svg>
 												</Link>
-												<ul class='dropdown-menu  hidden text-gray-700 pt-1'>
-													<li class=''>
+												<ul className='dropdown-menu  hidden text-gray-700 pt-1'>
+													<li className=''>
 														<Link
-															class='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
+															className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
 															to='/Menu'>
 															Food Menu
 														</Link>
 													</li>
-													<li class=''>
+													<li className=''>
 														<a
-															class='bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
+															className='bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap'
 															href='#'>
 															Drink Menu
 														</a>

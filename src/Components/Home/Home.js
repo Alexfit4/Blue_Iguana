@@ -4,7 +4,7 @@ import Hero from '../Hero/Hero';
 import { data } from './HomeData';
 export default function Home() {
 	return (
-		<div className='container w-screen lg:mx-auto mx-auto md:mx-auto md:px-28 '>
+		<div className='container w-screen lg:mx-auto lg:px-28 px-28 mx-auto md:mx-auto md:px-28 '>
 			<div className=' mx-auto'>
 				<Hero />
 			</div>

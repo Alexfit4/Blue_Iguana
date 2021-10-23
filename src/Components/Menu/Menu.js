@@ -114,7 +114,7 @@ export default function Menu() {
 									<CardRow>
 										<CardImage
 											src={x.image}
-											className='w-28'
+											className='md:w-28 w-28'
 											alt='Card Image'
 										/>
 

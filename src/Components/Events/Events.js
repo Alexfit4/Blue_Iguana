@@ -2,14 +2,14 @@ import React from 'react'
 import './Events.css'
 export default function Events() {
     return (
-			<div className='container mx-auto px-28'>
+			<div className='container mx-auto sm:px-28'>
 				<div className='eventBanner -mt-28 opacity-40 '></div>
-				<h1 className='about-us  text-white opacity-100 absolute top-20  text-center  text-3xl mt-10 mb-10'>
+				<h1 className='about-us  text-white opacity-100 absolute inset-x-0 top-40  text-center text-7xl mt-10 mb-10'>
 					Weekly Events
 				</h1>
 
 				<div className='container -mt-24 mx-auto h-auto relative border-2 h-screen  border-opacity-100 border-solid rounded-t-lg shadow-inner-2xl shadow-2xl  bg-white '>
-					<div className='container mx-auto px-24 mt-10'>
+					<div className='container mx-auto sm:px-24 mt-10'>
 						<p className='about-us-p'>
 							Thank you for choosing to dine with us! Here at Blue Iguana we are
 							dedicated in providing our guests with a genuine, home-style,

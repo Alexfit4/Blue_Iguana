@@ -3,7 +3,7 @@ import video from '../Assets/IMG_0096.mp4'
 import './Hero.css'
 export default function Hero() {
     return (
-			<div className='-mt-20 z-40'>
+			<div className='sm:-mt-20 z-40'>
 				<div className='container'>
 					<video
 						className='video-size md:w-screen '

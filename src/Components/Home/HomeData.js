@@ -5,14 +5,14 @@ import uberEats from '../Assets/uberEats.png';
 export const data = [
 	{
 		image: uberEats,
-		styling: 'md:w-40 w-32 ml-28 lg:mx-auto md:ml-22 mb-10',
+		styling: 'md:w-40 w-32 ml-20 lg:mx-auto md:ml-22 mb-10',
 		title: 'UberEats',
 		description:
 			'You can order your favorite dishes through Uber Eats. (link to UberEats)',
 	},
 	{
 		image: happyHour,
-		styling: 'md:w-28 w-32 ml-32 lg:mx-auto md:ml-22 ',
+		styling: 'md:w-28 w-32 ml-20 lg:mx-auto md:ml-22 ',
 		title: 'Happy Hour Menu',
 		description:
 			'Drink specials all day until 8pm. Every day of the week! Even weekends!',
@@ -25,7 +25,7 @@ export const data = [
 	},
 	{
 		image: drinkMenu,
-		styling: 'md:w-28 w-40 ml-32 md:ml-32 lg:mx-auto mb-16',
+		styling: 'md:w-28  w-40 ml-32 md:ml-32 lg:mx-auto mb-10 mx-auto',
 		title: 'Drink Menu',
 		description:
 			'Beers from local breweries all around the DMV and quality cocktails.',

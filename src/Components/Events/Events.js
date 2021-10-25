@@ -4,7 +4,7 @@ export default function Events() {
     return (
 			<div className='container mx-auto px-28'>
 				<div className='eventBanner -mt-28 opacity-40 '></div>
-				<h1 className='about-us  text-white opacity-100 absolute top-20 text-center text-3xl mt-10 mb-10'>
+				<h1 className='about-us  text-white opacity-100 absolute top-20  text-center  text-3xl mt-10 mb-10'>
 					Weekly Events
 				</h1>
 
@@ -35,7 +35,6 @@ export default function Events() {
 							strong focus to support local business.
 						</p>
 					</div>
-			
 				</div>
 			</div>
 		);

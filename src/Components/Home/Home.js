@@ -18,7 +18,7 @@ export default function Home() {
 					<div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4'>
 						{data.map((x) => {
 							return (
-								<div className=''>
+								<div>
 									<img className={x.styling} src={x.image} alt='' />
 									<h2 className='text-center text-xl font-extrabold'>
 										{x.title}

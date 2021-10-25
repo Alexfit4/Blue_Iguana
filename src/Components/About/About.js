@@ -6,14 +6,14 @@ import insideBar from './Assets/insideBAR.png';
 
 export default function About() {
 	return (
-		<div className='container mx-auto px-28'>
+		<div className='container mx-auto sm:px-28  '>
 			<div className='aboutBanner -mt-28 opacity-75 '></div>
-			<h1 className='about-us  text-white opacity-100 absolute top-20 text-center text-3xl mt-10 mb-10'>
+			<h1 className='about-us  text-white opacity-100 absolute inset-x-0 top-40  text-center text-7xl mt-10 mb-10 '>
 				About Us
 			</h1>
 
 			<div className='container -mt-24 mx-auto h-auto relative border-2 h-screen  border-opacity-100 border-solid rounded-t-lg shadow-inner-2xl shadow-2xl  bg-white '>
-				<div className='container mx-auto px-24 mt-10'>
+				<div className='container mx-auto sm:px-24 mt-10'>
 					<p className='about-us-p'>
 						Thank you for choosing to dine with us! Here at Blue Iguana we are
 						dedicated in providing our guests with a genuine, home-style,
@@ -39,7 +39,7 @@ export default function About() {
 						focus to support local business.
 					</p>
 				</div>
-				<div className='container mx-auto px-48 grid grid-cols-3 gap-6 mt-10'>
+				<div className='container mx-auto md:px-0 px-48 grid sm:grid-col-1 grid-cols-3 gap-6 mt-10'>
 					<img src={inside} alt='inside' />
 					<img src={outside} alt='outside' />
 					<img src={insideBar} alt='insideBar' />

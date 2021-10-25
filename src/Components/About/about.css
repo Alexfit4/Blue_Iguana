@@ -5,14 +5,34 @@
 	background-size: cover;
 }
 
+/* Portrait and Landscape */
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+	.about-us {
+		left: 32%;
+		font-family: Nadeem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 72px;
+		line-height: 99px;
+	}
+}
+
+
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+	.about-us {
+		left: 40%;
+		font-family: Nadeem;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 72px;
+		line-height: 99px;
+	}
+} */
+
 .about-us {
-	left: 40%;
-	font-family: Nadeem;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 72px;
-	line-height: 99px;
 	
+	font-family: Nadeem;
 }
 
 .about-us-p {
@@ -21,5 +41,4 @@
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 25px;
-	
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.css';
 export default function Footer() {
 	return (
-		<div className='  h-full container mx-auto px-28 border-opacity-100 border-solid shadow-inner-2xl'>
+		<div className='  h-full container mx-auto sm:px-28 border-opacity-100 border-solid shadow-inner-2xl'>
 			<nav id='footer' className=' bottom-footer opacity-40  bg-gray-800'>
 				<div className='container mx-auto pt-8 pb-4'>
 					<div className='flex flex-wrap overflow-hidden sm:-mx-1 md:-mx-px lg:-mx-2 xl:-mx-2'>

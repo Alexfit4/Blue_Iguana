@@ -39,7 +39,7 @@ export default function About() {
 						focus to support local business.
 					</p>
 				</div>
-				<div className='container mx-auto md:px-0 px-48 grid sm:grid-col-1 grid-cols-3 gap-6 mt-10'>
+				<div className='container mx-auto md:px-0 md:px-48 grid sm:grid-col-1 grid-cols-3 gap-6 mt-10'>
 					<img src={inside} alt='inside' />
 					<img src={outside} alt='outside' />
 					<img src={insideBar} alt='insideBar' />

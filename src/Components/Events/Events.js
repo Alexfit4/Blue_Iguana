@@ -10,27 +10,27 @@ import sunday from './Assets/sunday.jpg';
 
 export default function Events() {
 	return (
-		<div className='container mx-auto sm:px-28'>
+		<div className='md:container md:mx-auto md:px-28'>
 			<div className='eventBanner -mt-28 opacity-40 '></div>
 			<h1 className='about-us  text-white opacity-100 absolute inset-x-0 top-40  text-center text-7xl mt-10 mb-10'>
 				Weekly Events
 			</h1>
 
-			<div className='container -mt-24 mx-auto h-auto relative border-2 h-screen  border-opacity-100 border-solid rounded-t-lg shadow-inner-2xl shadow-2xl  bg-white '>
-				<div className='container mx-auto sm:px-24 mt-10'>
-					<p className='about-us-p'>
+			<div className='md:container -mt-24 md:mx-auto h-auto relative border-2 h-screen  border-opacity-100 border-solid rounded-t-lg shadow-inner-2xl shadow-2xl  bg-white '>
+				<div className='md:container mx-auto sm:px-24 mt-10'>
+					<p className='about-us-p text-center'>
 						Blue Iguana’s famous night life 7 days a week. From Dj’s to poker.
 						There’s always something happening late night at “The Iggy”
 					</p>
 				</div>
 
-				<div className='container mx-auto sm:px-24 mt-10 mb-20'>
+				<div className='md:container mx-auto sm:px-24 mt-10 mb-20'>
 					<h1 className='text-center text-4xl text-indigo-700'>
 						Happy Hour All Day Until 8pm!
 					</h1>
 				</div>
 
-				<div className='container mx-22 px-32 grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-3'>
+				<div className='md:container mx-22 md:px-32 grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-3'>
 					<div>
 						<h1 className='ml-28 text-2xl mb-8'>Monday</h1>
 						<img className='events-image mb-5' src={poker} alt='' />

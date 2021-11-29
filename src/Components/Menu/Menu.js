@@ -1,8 +1,8 @@
 import React from 'react';
 import menuHero from '../Assets/menudish-1-1500x900.jpg';
-import { Appetizers, heroImages, indexList } from './MenuList';
+import { Appetizers,  indexList } from './MenuList';
 import './Menu.css';
-import { Link } from 'react-scroll';
+import { Link as Scroll } from 'react-scroll';
 import {
 	Card,
 	CardRow,
@@ -11,6 +11,7 @@ import {
 	CardBody,
 	Paragraph,
 } from '@material-tailwind/react/';
+import {  Link } from 'react-router-dom';
 import H6 from '@material-tailwind/react/Heading6';
 import SmallPlates from './SmallPlates';
 import TaterTots from './TaterTots';
@@ -28,7 +29,7 @@ export default function Menu() {
 			<div className='relative h-96 m-8 -mt-16 overflow-hidden rounded-lg bg-indigo-500 container mx-auto'>
 				<div className='absolute z-30  flex w-full h-full'>
 					<div className='relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2'>
-						<h2 className='text-7xl hero-menu-text mt-60'>
+						<h2 className='text-7xl hero-menu-text mt-24'>
 							Blue Iguana Food Menu
 						</h2>
 						<span></span>
@@ -65,36 +66,41 @@ export default function Menu() {
 			<div className='border-2 -mt-12  border-opacity-100 border-solid rounded-lg shadow-inner-2xl shadow-2xl  bg-white'>
 				<div className='container max-w-7xl mx-auto px-4'>
 					<div className='flex lg:flex-row md:flex-col flex-col relative z-50'>
-						<StatusCard
-							color='red'
-							icon='grade'
-							title='Speciality Menu'></StatusCard>
-						<StatusCard
-							color='lightBlue'
-							icon='brunch_dining'
-							title='Breakfast Menu'></StatusCard>
-						<StatusCard
-							color='orange'
-							icon='restaurant_menu'
-							title='Weekly Specials'></StatusCard>
-						<StatusCard
-							color='teal'
-							icon='event_available'
-							title='Holiday'></StatusCard>
+						<StatusCard color='red' icon='grade'>
+							<Link target='_blank' to='/Menu-specialty'>
+								<h1 className='text-2xl font-bold'>Speciality Menu</h1>
+							</Link>
+						</StatusCard>
+
+						<StatusCard color='lightBlue' icon='brunch_dining'>
+							<Link target='_blank' to='/Menu-breakfast'>
+								<h1 className='text-2xl font-bold'>Breakfast Menu</h1>
+							</Link>
+						</StatusCard>
+						<StatusCard color='orange' icon='restaurant_menu'>
+							<Link target='_blank' to='/Weekly-Special'>
+								<h1 className='text-2xl font-bold'>Weekly Specials</h1>
+							</Link>
+						</StatusCard>
+						<StatusCard color='teal' icon='event_available'>
+							<Link target='_blank' to='/Holiday-Special'>
+								<h1 className='text-2xl font-bold'>Holiday</h1>
+							</Link>
+						</StatusCard>
 					</div>
 				</div>
 
-				<div className='container mx-auto flex md:justify-around lg:mx-64 flex-wrap grid lg:grid-cols-2 sm:grid-col-1  '>
+				<div className='container mx-auto pr-32 flex md:justify-around lg:mx-64 flex-wrap grid lg:grid-cols-2 sm:grid-col-1  '>
 					{indexList.map((x) => {
 						return (
-							<Link
+							<Scroll
 								activeClass='active'
 								spy={true}
 								smooth={true}
 								to={x}
-								className='bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-2 px-4 lg:mx-48 sm:mx-0 mt-5 rounded '>
+								className='bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-2 px-4 lg:mx-48 sm:mx-0 mt-5 rounded md:w-28 '>
 								{x}
-							</Link>
+							</Scroll>
 						);
 					})}
 				</div>

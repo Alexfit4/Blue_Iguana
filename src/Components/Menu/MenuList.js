@@ -38,13 +38,13 @@ import panRoastedSalmon from '../Assets/salmon-750x750.png';
 import pho from '../Assets/pho-750x750.png';
 import spinachRav from '../Assets/mushroom-ravioli-750x750.png';
 import jambalaya from '../Assets/yambalamba-750x750.png';
-import homemadeIceCream from '../Assets/ice-cream-750x750.png'
-import tresLeches from '../Assets/tres-leches-750x750.png'
-import grannySmith from '../Assets/apple-crisp-750x750.png'
-import chocolateCake from '../Assets/chocolate-cake-750x750.png'
-import tacoBanner from '../Assets/homepage-dish-2-1500x900.jpg'
-import seaFoodInfo from '../Assets/homepage-seafood-3-1500x900.jpg'
-import cheeseCakeBanner from '../Assets/cheescake.jpg'
+import homemadeIceCream from '../Assets/ice-cream-750x750.png';
+import tresLeches from '../Assets/tres-leches-750x750.png';
+import grannySmith from '../Assets/apple-crisp-750x750.png';
+import chocolateCake from '../Assets/chocolate-cake-750x750.png';
+import tacoBanner from '../Assets/homepage-dish-2-1500x900.jpg';
+import seaFoodInfo from '../Assets/homepage-seafood-3-1500x900.jpg';
+import cheeseCakeBanner from '../Assets/cheescake.jpg';
 const heroImages = [
 	tacoBanner,
 	seaFoodInfo,
@@ -593,6 +593,116 @@ const DessertsMenu = [
 		description: 'Classic cheesecake with graham cracker crust',
 	},
 ];
+
+const breakfastMenu = [
+	{
+		name: 'CHESAPEAKE BENEDICT',
+		image: logoPlace,
+		price: '$12',
+		description:
+			'Poached egg over a jumbo lump crab cake, topped with hollandaise sauce, and Old Bay, served with home fries',
+	},
+	{
+		name: 'BETTER BOTANAS',
+		image: logoPlace,
+		price: '$12',
+		description:
+			'Our house specialty Botanas over home fries, topped with a fried egg. Double it up! Get twice the meat $15',
+	},
+	{
+		name: 'CHICKEN AND WAFFLE SLIDERS',
+		image: logoPlace,
+		price: '$16',
+		description:
+			'Cheddar cheese melted on a fried chicken breast held together by Belgian Waffles, served with maple creme, maple syrup, and a side of home fries.',
+	},
+	{
+		name: 'BLUE BURRITO',
+		image: logoPlace,
+		price: '$10',
+		description:
+			'Scrambled eggs, bacon, pico de gallo, pepper jack and cheddar cheese, served w/ homefries.',
+	},
+];
+
+const byo = [
+	{
+		name: 'CHOOSE YOUR GRAIN',
+
+		price: '$1',
+		description: [
+			'Tortilla , ',
+			'Brioche , ',
+			'Ciabatta , ',
+			'Texas Toast , ',
+			'Hoagie , ',
+			'Pita , ',
+			'English Muffin , ',
+			'Pancake , ',
+			'Waffle , ',
+			'French Toast',
+		],
+	},
+	{
+		name: 'CHOOSE YOUR MEAT',
+		price: '$2',
+		description: [
+			'Bacon $2 , ',
+			'Canadian Bacon $2 , ',
+			'Crab Cake $8 , ',
+			'Andouille $2 , ',
+			'Sausage Links $2 , ',
+			'Diced Ham $2 , ',
+			'Thin Rib-eye $5 , ',
+			'Grilled Chicken Breast $4 , ',
+			'Gyro $5 , ',
+			'IMPOSSIBLE BURGER $8 , ',
+			'Hamburger $6.00',
+		],
+	},
+	{
+		name: '$2',
+		price: 'CHOOSE YOUR CHEESE',
+		description: [
+			'American , ',
+			'Cheddar , ',
+			'Pepper jack , ',
+			'BleuGoat , ',
+			'Provolone',
+		],
+	},
+	{
+		name: '$1/each',
+		price: 'CHOOSE YOUR EGGS',
+		description: ['Scrambled , ', 'Fried , ', 'Poached '],
+	},
+	{
+		name: 'CHOOSE YOUR VEGGIES',
+		price: '$0.50 each',
+		description: [
+			'Diced White Onion , ',
+			'Sliced Red Onion , ',
+			'Zucchini  , ',
+			'Squash , ',
+			'Sliced Tomato , ',
+			'Diced Tomato , ',
+			'Pico de Gallo , ',
+			'Arugula , ',
+			'Spinach , ',
+			'Romaine , ',
+			'Red Pepper, ',
+			'Green Pepper , ',
+			'Jalapeno , ',
+			'Chopped Asparagus , ',
+			'Mushrooms , ',
+			'Corn , ',
+			'Black Beans , ',
+			'Kalamata Olives , ',
+			'Black Olives , ',
+			'Avocado Guacamole $2/each',
+		],
+	},
+];
 export {
 	Appetizers,
 	heroImages,
@@ -605,4 +715,6 @@ export {
 	SidesMenu,
 	PremiumSidesMenu,
 	DessertsMenu,
+	breakfastMenu,
+	byo,
 };

@@ -19,12 +19,12 @@ export default function Home() {
 				</h1>
 
 				<div className='container relative md:mx-auto mb-28'>
-					<div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+					<div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 '>
 						{data.map((x) => {
 							return (
 								<div>
 									<img
-										className='home-image ml-32 md:ml-34 lg:ml-28'
+										className='home-image ml-32 md:ml-24 lg:ml-14'
 										src={x.image}
 										alt=''
 									/>
@@ -41,14 +41,14 @@ export default function Home() {
 				</div>
 
 				<div className='container relative mx-auto px-28 md:px-20 mt-10'>
-					<div className='mx-auto md:px-28 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-2'>
+					<div className='mx-auto md:px-28 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5'>
 						<div>
 							<img
 								src={friendsDrinking}
 								className='w-72'
 								alt='friends drinking'
 							/>
-							<h2 className='lg:ml-24 md:ml-8  mb-5 font-bold'>Daily Bar Events</h2>
+							<h2 className=' md:ml-8   mb-5 font-bold'>Daily Bar Events</h2>
 							<p>
 								Wednesday ladies night, boogey down Friday’s and poker Monday
 								with DJ’s 5 days a week.
@@ -57,7 +57,7 @@ export default function Home() {
 
 						<div>
 							<img src={birthdayCake} className='w-72' alt='birthday cake' />
-							<h2 className='lg:ml-24 md:ml-8 mb-5 font-bold'>Celebrate With Us!</h2>
+							<h2 className='md:ml-8 mb-5 font-bold'>Celebrate With Us!</h2>
 							<p>
 								Book a birthday party, anniversary, or any other special event
 								in our private room, The Atrium.
@@ -66,7 +66,7 @@ export default function Home() {
 
 						<div>
 							<img src={drinksHome} className='w-72' alt='ice splash in cups' />
-							<h2 className='lg:ml-24 md:ml-10 mb-5 font-bold'>Happy Hour</h2>
+							<h2 className='md:ml-10 mb-5 font-bold'>Happy Hour</h2>
 							<p>
 								Great deals on beer, wine and spirits; everyday, all day until
 								8PM.

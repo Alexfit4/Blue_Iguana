@@ -3,16 +3,16 @@ import './Contact.css'
 import contactusMap from './Assets/contactusMap.png'
 export default function Contact() {
     return (
-			<div className='container mx-auto px-28'>
+			<div className='md:container md:mx-auto md:px-28'>
 				<div className='contactBanner -mt-28 opacity-40 '></div>
-				<h1 className='about-us text-white opacity-100 absolute top-20 text-center text-3xl mt-10 mb-10'>
+				<h1 className='about-us  text-white opacity-100 absolute inset-x-0 top-40  text-center text-7xl mt-10 mb-10'>
 					Contact Us
 				</h1>
 
-				<div className='container -mt-24 h-auto mx-auto relative border-2 h-screen  border-opacity-100 border-solid rounded-t-lg shadow-inner-2xl shadow-2xl  bg-white '>
-					<div className='container  mx-auto px-24 mt-10'>
+				<div className='md:container -mt-24 h-auto mx-auto relative border-2 h-screen  border-opacity-100 border-solid rounded-t-lg shadow-inner-2xl shadow-2xl  bg-white '>
+					<div className='md:container  mx-auto md:px-24 mt-10'>
 						<h1 className='text-center contact-us'>Hours of operation</h1>
-						<div className='container mt-5   ml-14 px-80  grid grid-cols-2 gap-2'>
+						<div className='md:container mt-5   ml-14  grid grid-cols-2 gap-2'>
 							<div>
 								<p>Monday-Friday</p>
 								<p>Saturday</p>

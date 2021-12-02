@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function SpecialtyMenu() {
 	return (
-		<div className='container mx-auto px-28'>
+		<div className='container mx-auto  md:px-28'>
 			<div className='relative h-96 m-8 -mt-16 overflow-hidden rounded-lg bg-indigo-500 container mx-auto'>
-				<div className='absolute z-30  flex w-full h-54 '>
+				<div className='absolute z-30  flex w-5/6 h-54 '>
 					<div className='relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2'>
 						<h2 className='text-7xl  hero-menu-text  mt-32'>
 							Blue Iguana Specialty Menu
@@ -34,7 +34,7 @@ export default function SpecialtyMenu() {
 			</div>
 			<div className='container -mt-20 mx-auto h-auto relative border-2 h-screen  border-opacity-100 border-solid rounded-t-lg shadow-inner-2xl shadow-2xl  bg-white '>
 				<div className='container mx-auto sm:px-24 mt-10 '>
-					<p className='about-us-p'>
+					<p className='about-us-p text-center'>
 						Blue Iguana’s famous night life 7 days a week. From Dj’s to poker.
 						There’s always something happening late night at “The Iggy”
 					</p>
@@ -48,9 +48,11 @@ export default function SpecialtyMenu() {
 
 				<div className='container mx-22 px-32 grid md:grid-cols-1 lg:grid-cols-2 grid-cols-1 gap-4'>
 					<div className='border-solid border-2  border-gray-300 rounded-lg shadow-2xl'>
-						<h1 className='ml-24 text-2xl mb-8'>Monday</h1>
+						<h1 className=' text-2xl mb-8 text-center'>Monday</h1>
 
-						<h1 className='ml-4 text-2xl mt-10 mb-5'>Monday Night Poker</h1>
+						<h1 className='ml-4 text-2xl mt-10 mb-5 text-center'>
+							Monday Night Poker
+						</h1>
 						<p className='text-center mx-5'>
 							World Tavern Poker, America’s number 1 bar poker league.Free!
 							Every Monday at 7pm & 9:00pm NFL Monday Night Football. Acustic
@@ -58,7 +60,7 @@ export default function SpecialtyMenu() {
 						</p>
 					</div>
 					<div className='border-solid border-2  border-gray-300 rounded-lg shadow-2xl'>
-						<h1 className='ml-20 text-2xl mb-8'>Tuesday</h1>
+						<h1 className=' text-2xl mb-8 text-center'>Tuesday</h1>
 
 						<h1 className='text-center text-2xl mt-10 mb-6'>
 							Service Industry Night
@@ -71,8 +73,8 @@ export default function SpecialtyMenu() {
 							Every Tueday From 10pm until close Tequila Tuesday after 10pm!
 						</p>
 					</div>
-					<div className='border-solid border-2  border-gray-300 rounded-lg shadow-2xl'>
-						<h1 className='ml-20 text-2xl mb-8 mt-10'>Wednesday</h1>
+					<div className='border-solid border-2  border-gray-300 rounded-lg shadow-2xl pb-10'>
+						<h1 className='text-center text-2xl mb-8 mt-10'>Wednesday</h1>
 
 						<h1 className='text-center text-2xl mb-4'>The Big Travis Show</h1>
 						<p className='mb-10 text-center'>
@@ -82,7 +84,7 @@ export default function SpecialtyMenu() {
 						<p className='mb-10 text-center'>DJ at 10pm</p>
 
 						<h1 className='text-center text-2xl'>Wednesday Seafood Special</h1>
-						<p className='ml-8 text-2xl text-blue-400'>
+						<p className='text-center text-2xl text-blue-400'>
 							Seafood Special from 5pm - 10pm
 						</p>
 					</div>
@@ -101,12 +103,12 @@ export default function SpecialtyMenu() {
 					<div className='border-solid border-2  border-gray-300 rounded-lg shadow-2xl'>
 						<h1 className='text-center text-2xl mb-8 mt-10'>Friday</h1>
 
-						<h1 className='ml-12 text-2xl'>Fridays DJ LUV</h1>
+						<h1 className='text-center text-2xl'>Fridays DJ LUV</h1>
 						<p className='text-center mt-5'>
 							Big Travis taking requests all night DJ at 10pm
 						</p>
 					</div>
-					<div className='border-solid border-2  border-gray-300 rounded-lg shadow-2xl'>
+					<div className='border-solid border-2  border-gray-300 rounded-lg shadow-2xl pb-10'>
 						<h1 className='text-center text-2xl mb-8 mt-10'>Saturday</h1>
 
 						<h1 className='text-center text-2xl'>Saturday Showdown</h1>
@@ -116,8 +118,8 @@ export default function SpecialtyMenu() {
 						</p>
 						<p className='text-center'>DJ Lay Loca at 10pm</p>
 					</div>
-					<div className='border-solid border-2  border-gray-300 rounded-lg shadow-2xl'>
-						<h1 className='ml-28 text-2xl mb-8 mt-8'>Sunday</h1>
+					<div className='border-solid border-2  border-gray-300 rounded-lg shadow-2xl pb-10 mb-5'>
+						<h1 className='text-center text-2xl mb-8 mt-8'>Sunday</h1>
 
 						<h1 className='text-center  text-2xl'>Sunday Brunch / DJ Russel</h1>
 						<p className='mb-10 text-center mx-5'>

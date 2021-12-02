@@ -25,7 +25,7 @@ import StatusCard from '../StatusCard/StatusCard';
 
 export default function Menu() {
 	return (
-		<div className='container mx-auto px-28'>
+		<div className='container mx-auto md:px-28'>
 			<div className='relative h-96 m-8 -mt-16 overflow-hidden rounded-lg bg-indigo-500 container mx-auto'>
 				<div className='absolute z-30  flex w-full h-full'>
 					<div className='relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2'>
@@ -63,7 +63,7 @@ export default function Menu() {
 				</div>
 			</div>
 
-			<div className='border-2 -mt-12  border-opacity-100 border-solid rounded-lg shadow-inner-2xl shadow-2xl  bg-white'>
+			<div className='border-2 -mt-12 pb-10  border-opacity-100 border-solid rounded-lg shadow-inner-2xl shadow-2xl  bg-white'>
 				<div className='container max-w-7xl mx-auto px-4'>
 					<div className='flex lg:flex-row md:flex-col flex-col relative z-50'>
 						<StatusCard color='red' icon='grade'>
@@ -90,7 +90,7 @@ export default function Menu() {
 					</div>
 				</div>
 
-				<div className='container mx-auto pr-32 flex md:justify-around lg:mx-64 flex-wrap grid lg:grid-cols-2 sm:grid-col-1  '>
+				<div className='container mx-auto pr-3 flex md:justify-around lg:mx-64 flex-wrap grid lg:grid-cols-2 sm:grid-col-1   '>
 					{indexList.map((x) => {
 						return (
 							<Scroll
@@ -98,7 +98,7 @@ export default function Menu() {
 								spy={true}
 								smooth={true}
 								to={x}
-								className='bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-2 px-4 lg:mx-48 sm:mx-0 mt-5 rounded md:w-28 '>
+								className='bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center py-2 px-4 lg:mx-48  mt-5 rounded md:w-34 '>
 								{x}
 							</Scroll>
 						);

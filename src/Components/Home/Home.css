@@ -2,7 +2,11 @@
 	width: 100px;
 	height: 100px;
 	object-fit: cover;
-
+	margin-left: 35%;
 }
 
-
+.weekly-specails-image {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}

@@ -45,6 +45,11 @@ import chocolateCake from '../Assets/chocolate-cake-750x750.png';
 import tacoBanner from '../Assets/homepage-dish-2-1500x900.jpg';
 import seaFoodInfo from '../Assets/homepage-seafood-3-1500x900.jpg';
 import cheeseCakeBanner from '../Assets/cheescake.jpg';
+import bbqWings from '../Assets/HappyHourMenu/hh-wings-750x750.png';
+import hhChickenTenders from '../Assets/HappyHourMenu/hh-chicken-tenders-750x750.png';
+import hhbaconCheeseFries from '../Assets/HappyHourMenu/hh-fries-750x750.png';
+import hhSliders from '../Assets/HappyHourMenu/hh-sliders-750x750.png';
+import hhquesadilla from '../Assets/HappyHourMenu/hh-quesadilla-750x750.png';
 const heroImages = [
 	tacoBanner,
 	seaFoodInfo,
@@ -344,13 +349,6 @@ const EntreeMenu = [
 			'Our ribs seasoned and smoked in house, with a side of our homemade cole slaw. Served with your choice of one side',
 	},
 	{
-		name: '1/2 RACK OF RIBS',
-		image: logoPlace,
-		price: '$16',
-		description:
-			'Our ribs seasoned and smoked in house, with a side of our homemade cole slaw. Served with your choice of one side',
-	},
-	{
 		name: 'CHICKEN AND WAFFLE SLIDERS',
 		image: chickenWaffle,
 		price: '$16',
@@ -373,13 +371,6 @@ const EntreeMenu = [
 		description1: 'Add: chicken $4, shrimp $5, lobster $7',
 	},
 	{
-		name: 'FISH & CHIPS',
-		image: logoPlace,
-		price: '$18',
-		description:
-			'Beer battered cod fish served with our hand cut fries and a side of tartar sauce',
-	},
-	{
 		name: 'JUMBO LUMP CRAB CAKES',
 		image: jumboCrabCakes,
 		price: '$25',
@@ -396,12 +387,6 @@ const EntreeMenu = [
 		name: 'RIBEYE (16OZ)',
 		image: logoPlace,
 		price: '$35',
-		description: 'Served with your choice of two sides',
-	},
-	{
-		name: 'GRILLED BALSAMIC NEW YORK STRIP WITH BLUE CHEESE BUTTER (16OZ)*',
-		image: logoPlace,
-		price: '$33',
 		description: 'Served with your choice of two sides',
 	},
 	{
@@ -433,13 +418,6 @@ const EntreeMenu = [
 		price: '$18',
 		description:
 			'Seasoned shrimp with creamy grits with parmesan and balsamic glaze',
-	},
-	{
-		name: 'PHO',
-		image: pho,
-		price: '$10',
-		description: 'Vietnamese soup consisting of broth, rice noodles, herbs',
-		description1: 'Add protein: chicken $4, shrimp $5, steak $5, lobster $7',
 	},
 	{
 		name: 'SPINACH MUSHROOM RAVIOLI',
@@ -610,13 +588,6 @@ const breakfastMenu = [
 			'Our house specialty Botanas over home fries, topped with a fried egg. Double it up! Get twice the meat $15',
 	},
 	{
-		name: 'CHICKEN AND WAFFLE SLIDERS',
-		image: logoPlace,
-		price: '$16',
-		description:
-			'Cheddar cheese melted on a fried chicken breast held together by Belgian Waffles, served with maple creme, maple syrup, and a side of home fries.',
-	},
-	{
 		name: 'BLUE BURRITO',
 		image: logoPlace,
 		price: '$10',
@@ -703,6 +674,179 @@ const byo = [
 		],
 	},
 ];
+
+const happyHourFood = [
+	{
+		name: 'BEEF CHILI NACHOS',
+		description: 'Chili / Cheddar / Pepper Jack /Pico de Gallo/Sour Cream',
+		image: logoPlace,
+		price: '$5',
+	},
+	{
+		name: 'BUFFALO OR BBQ WINGS',
+		image: bbqWings,
+		price: '$5',
+	},
+	{
+		name: 'FRIED MOZZARELLA STICKS',
+		image: logoPlace,
+		price: '$5',
+	},
+	{
+		name: 'CHICKEN TENDERS',
+		description:
+			'Choice of two sauces: honey mustard, buffalo sauce, bourbon BBQ, ranch, or bleu cheese',
+		image: hhChickenTenders,
+		price: '$5',
+	},
+	{
+		name: 'BACON & JALAPENO MAC N CHEESE',
+		image: logoPlace,
+		price: '$5',
+	},
+	{
+		name: 'BACON CHEESE FRIES',
+		image: hhbaconCheeseFries,
+		price: '$5',
+	},
+	{
+		name: 'BURGER SLIDERS & FRIES',
+		description: 'Lettuce / Tomato/ Chipotle Dressing',
+		image: hhSliders,
+		price: '$5',
+	},
+	{
+		name: 'CHICKEN QUESADILLA',
+		image: hhquesadilla,
+		price: '$5',
+	},
+];
+
+const hhdrinks = [
+	{
+		name: 'ALL DAY HAPPY HOUR',
+		description: 'Fireball and PBR Tall Boy',
+		price: '$3',
+	},
+	{
+		name: 'HOUSE WINE',
+		description: 'Cabernet, Chardonnay, Merlot, Pinot Grigio, Sauvignon Blanc',
+		price: '$3.50',
+	},
+	{
+		name: 'DOMESTIC BOTTLES',
+		description: 'Budweiser, Bud Light, Coors Light, Miller Lite',
+		price: '$3.50',
+	},
+	{
+		name: 'DOMESTIC DRAFTS',
+		description: 'Miller Lite, Yeungling Larger',
+		price: '$3.50',
+	},
+	{
+		name: 'RAIL LIQUOR',
+		description: 'Bourbon, Gin, Rum, Scotch, Spiced Rum, Tequila, Vodka',
+		price: '$3.50',
+	},
+];
+
+const wednesdaySpecials = [
+	{
+		name: '1 LB WILD CAUGHT PEEL & EAT SHRIMP*',
+		description: '*LIMITED QUANTITY',
+		image: logoPlace,
+		price: '$8.99',
+	},
+	{
+		name: '1 LB ALASKAN SNOW CRAB LEGS*',
+		description: '*LIMITED QUANTITY',
+		image: logoPlace,
+		price: '$12.99',
+	},
+];
+
+const meatMondays = [
+	{
+		name: 'BOARD MEETING 1',
+		description:
+			'Includes 8 wings, 1/2 Rack Ribs, Pulled Pork (1 lb), Kielbasa (12oz) and Beef Brisket (1lb)',
+		price: '$20',
+	},
+	{
+		name: 'BOARD MEETING 2',
+		description:
+			'Includes 12 wings, Rack Ribs, Pulled Pork (1 lb), Kielbasa (12oz) and Beef Brisket (1lb)',
+		price: '$30',
+	},
+	{
+		name: 'BOARD MEETING 3',
+		description:
+			'Includes 18 wings, Rack Ribs, Pulled Pork (1 lb), Kielbasa (12oz) and Beef Brisket (1lb)',
+		price: '$35',
+	},
+	{
+		name: 'VEGGIE PLATTER',
+		description:
+			'Grilled Sliced Zucchini, Yellow Squash, Yam, Mushrooms, Peppers, Asparagus, Tomatoes and hummus!',
+		price: '$18',
+	},
+];
+
+const sundayBrunch = [
+	{
+		name: 'ALL YOU CAN EAT',
+		description:
+			'Omelette station / Eggs Benedict / Home Fries / Breakfast Sausage / Bacon / Pancakes / French Toast / Three or Four types of entrees( change every Sunday)',
+		price: '$',
+	},
+	{
+		name: 'SALAD STATION',
+		description: 'Caesar and House Salad',
+		price: '$',
+	},
+	{
+		name: 'CARVING STATION',
+		description: 'Beef carving station',
+		price: '$',
+	},
+	{
+		name: 'HAPPY HOUR MIMOSAS',
+		description: '*No included in Buffet price',
+		price: '$',
+	},
+	{
+		name: 'BLOODY MARY BAR',
+		description: 'Make you own Bloody Mary! *No included in Buffet price',
+		price: '$',
+	},
+];
+
+const mothersBrunch = [
+	{
+		name: 'SALAD AND SOUP STATION',
+		description:
+			'She crab soup / Ceasar salad / classic russian olivier salad / mixed garden salad',
+	},
+	{
+		name: 'SEAFOOD',
+		description:
+			'eel and eat wild caught shrimp / atlantic smoked salmon with cream cheese and capers',
+	},
+	{
+		name: 'HOT STATION',
+		description:
+			'Breakfast & lunch specialities including: pancakes / french toast / belgian waffles / applewood smoked bacon / Breakfast sausage / eggs benedict / omelette station / creamy mashed potatoes / roasted pork loin / cajun chicken pasta / Skillet corn / bbq meatballs / mixed grilled veggies / mac & cheese / buffalo wings',
+	},
+	{
+		name: 'CARVING STATION',
+		description: 'Oven roast beef with horseradish cream sauce / holiday ham',
+	},
+	{
+		name: 'DESSERTS',
+		description:
+			'Assorted easter cupcakes / bread pudding / chocolate cake / mixed fruits / strawberries w/ wipped cream',
+	},
+];
 export {
 	Appetizers,
 	heroImages,
@@ -717,4 +861,10 @@ export {
 	DessertsMenu,
 	breakfastMenu,
 	byo,
+	happyHourFood,
+	hhdrinks,
+	wednesdaySpecials,
+	meatMondays,
+	sundayBrunch,
+	mothersBrunch,
 };
